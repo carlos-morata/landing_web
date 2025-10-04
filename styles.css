@@ -1,0 +1,114 @@
+/* ESTILOS RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MIS ESTILOS CSS */
+:root {
+    --colorBlue: #16336a;
+    --colorWhite: white;
+    --border: 10px;
+}
+
+
+/* ESTILOS HEADER */
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 18vh;
+    box-sizing: border-box;
+    background-color: var(--colorBlue);
+}
+
+/* ESTILOS LOGOTIPO */
+.site-header img {
+    width: 165px;
+    aspect-ratio: 1536 / 1024;
+    border-radius: var(--border);
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* ESTILOS BARRA DE NAVEGACIÓN */
+.navbar {
+    width: 50%;
+    height: 50%;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+/* ESTILOS A LA LISTA */
+.navbar .list-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILOS A LOS ELEMENTOS DE LA LISTA */
+.list-item-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ESTILOS A LOS ENLACES */
+.list-item-navbar a {
+    padding: 20px;
+    background-color: var(--colorWhite);
+    border-radius: var(--border);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.list-item-navbar a:hover {
+    background-color: transparent;
+    outline: 2px solid var(--colorWhite);
+    color: var(--colorWhite);
+}
