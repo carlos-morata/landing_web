@@ -119,7 +119,7 @@ table {
     flex-direction: column;
     text-align: center;
     width: 100vw;
-    height: 80vh;
+    height: 95vh;
     box-sizing: border-box;
 }
 
@@ -192,7 +192,26 @@ table {
 
 /* ESTILOS FOOTER */
 .site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100vw;
-    height: 8vh;
+    height: 10vh;
     background-color: var(--colorBlue);
+}
+
+.privacity, .name, .fa, .cookies {
+    color: var(--colorWhite);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.footer-links a {
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.footer-links a:last-child {
+    margin-right: 0px;
 }
