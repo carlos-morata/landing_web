@@ -129,6 +129,7 @@ table {
     margin-top: 35px;
     color: var(--colorBlue);
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .text-main {
@@ -205,6 +206,7 @@ table {
     color: var(--colorWhite);
     letter-spacing: 1px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .footer-links a {
@@ -273,7 +275,7 @@ table {
     line-height: 20px;
 }
 
-/* ESTILOS MAIN PORTFOLIO */
+/* ESTILOS MAIN - PORTFOLIO */
 .site-main-port {
     display: flex;
     flex-direction: column;
@@ -321,10 +323,6 @@ table {
     width: 45%;
 }
 
-.section-port:last-child {
-    border: none;
-}
-
 .figure {
     text-align: center;
 }
@@ -341,10 +339,115 @@ table {
     font-weight: bold
 }
 
-.figure img, video {
+.figure img, video, audio {
     margin-top: 10px;
 }
 
 .audio {
     width: 100%;
+}
+
+/* ESTILOS MAIN - FORMULARIO */
+.site-main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 92vh;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.title-contact {
+    font-size: 45px;
+    color: var(--colorBlue);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.text-contact {
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    border-radius: var(--border);
+    padding: 12px;
+    width: 30%;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.site-main-contact .form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--colorBlue);
+    border-radius: var(--border);
+    margin: 25px 0px 25px 0px;
+    padding: 10px;
+}
+
+.form label {
+    margin-top: 15px;
+    color: var(--colorBlue);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.form #label-check {
+    margin-top: 2px;
+}
+
+.form input[type="text"],
+input[type="email"],
+input[type="tel"], 
+textarea, select {
+    margin-top: 5px;
+}
+
+.form input[type="checkbox"] {
+    margin-top: 20px;
+}
+
+.form input {
+    border: none;
+    background-color: var(--colorBlue);
+    padding: 10px;
+    border-radius: var(--border);
+}
+
+.form textarea, select {
+    border: none;
+    background-color: var(--colorBlue);
+    padding: 10px;
+    border-radius: var(--border);
+}
+
+.form input::placeholder, textarea::placeholder {
+    color: var(--colorWhite);
+    letter-spacing: 1px;
+}
+
+.form select {
+    color: var(--colorWhite);
+    outline: none;
+}
+
+.form option {
+    color: var(--colorWhite);
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    color: var(--colorWhite);
+    margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.form input:focus, textarea:focus {
+    outline: none;
+    color: var(--colorWhite);
 }

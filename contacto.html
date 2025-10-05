@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing web | Inicio</title>
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="./styles.css">
+    <title>Landing web | Contacto</title>
+    <!-- Estilos CSS -->
+     <link rel="stylesheet" href="./styles.css">
     <!-- Link FontAwesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -30,37 +30,35 @@
             </ul>
          </nav>
     </header>
-    <main class="site-main">
+    <main class="site-main-contact">
+        <h1 class="title-contact">Contacto</h1>
+        <p class="text-contact">Ponte en contacto conmigo a través de este formulario:</p>
+        <form action="moratinos.carlos5@gmail.com" class="form">
+            <label for="name">Nombre:
+            </label>
+            <input type="text" placeholder="Tu Nombre" required name="name" id="name">
 
-        <h1 class="title-main">¡Bienvenido/a a mi página web!</h1>
-        <p class="text-main">Este es mi proyecto con HTML y CSS.</p>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" placeholder="correo@ejemplo.com" required name="email" id="email">
 
-        <section class="section-main">
+            <label for="tel">Teléfono:</label>
+            <input type="tel" placeholder="65532789" pattern="[0-9]{9}" required name="tel" id="tel">
 
-            <h2 class="title-cards">De esta forma está organizado mi proyecto:</h2>
+            <label for="select">Motivo:</label>
+            <select name="select" id="select">
+                <option value="Info">Solicitar información</option>
+                <option value="Duda">Resolver una duda</option>
+                <option value="Sug">Dar una sugerencia</option>
+            </select>
 
-            <section class="section-cards">
-                <section class="card">
-                <h3 class="title-card">Inicio</h3>
-                <p class="text-card">La página de incio, es dónde te encuentras ahora mismo. Es la introducción a la web.</p>
-                </section>
+            <label for="msg">Mensaje:</label>
+            <textarea name="msg" id="msg" placeholder="Escribe un mensaje..."></textarea>
 
-                <section class="card">
-                <h3 class="title-card">Biografía</h3>
-                <p class="text-card">En está página te cuento sobre mi vida, así que, si quieres saber más de mi, ya sabes a dónde tienes que ir.</p>
-                </section>
+            <input type="checkbox" required name="check" id="check">
+            <label for="check" id="label-check">Acepto los términos y condiciones de uso y la política de privacidad.</label>
 
-                <section class="card">
-                <h3 class="title-card">Portfolio</h3>
-                <p class="text-card">¿Quieres saber en qué boceto me he basado para hacer esta web? Sí es así, portfolio es tu página para visitar.</p>
-                </section>
-
-                <section class="card">
-                <h3 class="title-card">Contacto</h3>
-                <p class="text-card">Si quieres contactar conmigo, en la página de contacto puedes hacerlo a través de un formulario a rellenar.</p>
-                </section>
-            </section>
-        </section>
+            <input type="submit" value="Enviar"></input>
+        </form>
     </main>
     <footer class="site-footer">
         <p class="name">Carlos Moratinos &copy;</p>
@@ -78,5 +76,6 @@
             </a>
         </section>
     </footer>
+
 </body>
 </html>
