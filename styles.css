@@ -275,6 +275,14 @@ table {
     line-height: 20px;
 }
 
+.text-bio:hover {
+    color: var(--colorBlue);
+    background-color: transparent;
+    outline: 2px solid var(--colorBlue);
+    transition: all .8s linear;
+    font-weight: bold;
+}
+
 /* ESTILOS MAIN - PORTFOLIO */
 .site-main-port {
     display: flex;
