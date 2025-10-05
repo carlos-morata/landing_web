@@ -218,3 +218,55 @@ table {
 }
 
 /* ESTILOS MAIN - BIOGRAFÍA */
+.site-main-bio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80vh;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.main-left {
+    margin-left: 11%;
+}
+
+.site-main-bio .main-left img {
+    width: 300px;
+    aspect-ratio: 828 / 1472;
+    border-radius: var(--border);
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    height: 65%;
+    box-sizing: border-box;
+    margin-left: 50px;
+
+}
+
+.title-bio {
+    color: var(--colorBlue);
+    padding: 15px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    /* border-radius: var(--border); */
+}
+
+.text-bio {
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    border-radius: var(--border);
+    width: 75%;
+    padding: 15px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
