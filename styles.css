@@ -269,4 +269,82 @@ table {
     padding: 15px;
     word-spacing: 2px;
     letter-spacing: 1px;
+    cursor: default;
+    line-height: 20px;
+}
+
+/* ESTILOS MAIN PORTFOLIO */
+.site-main-port {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90%;
+    margin: 15px 0px;
+}
+
+.title-port {
+    font-size: 45px;
+    color: var(--colorBlue);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.text-port {
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    padding: 12px;
+    border-radius: var(--border);
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.sections-port {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.section-port {
+    border: 2px solid var(--colorBlue);
+    border-radius: var(--border);
+    padding: 10px;
+    margin-top: 20px;
+    width: 45%;
+}
+
+.section-port:last-child {
+    border: none;
+}
+
+.figure {
+    text-align: center;
+}
+
+.section-title-port {
+    display: inline-block;
+    font-size: 22px;
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
+    border-radius: var(--border);
+    width: 25%;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: bold
+}
+
+.figure img, video {
+    margin-top: 10px;
+}
+
+.audio {
+    width: 100%;
 }
