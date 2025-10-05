@@ -422,6 +422,7 @@ textarea, select {
     background-color: var(--colorBlue);
     padding: 10px;
     border-radius: var(--border);
+    color: var(--colorWhite);
 }
 
 .form textarea, select {
